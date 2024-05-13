@@ -10,8 +10,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 150px;
+    padding: 0px 125px;
     margin: 0;
+    gap: 40px;
     background-color: #1F2937;
 }
 
@@ -42,12 +43,11 @@ a{
 .bottomSection,
 .quoteSection{
     display: flex;
-    /* flex-direction: column; */
 }
 
 .topSection{
     background-color: #1F2937;
-    padding: 0px 150px 50px 150px;
+    padding: 0px 125px 50px 125px;
     justify-content: space-between;
 }
 
@@ -74,12 +74,13 @@ a{
     flex: auto;
 }
 
-img{
+.headerImage{
     width: 100%;
     height: auto;
     display: flex;
     margin: auto;
     flex:auto;
+    min-width: 100px;
 }
 
 .pageTitle{
@@ -103,48 +104,67 @@ img{
     font-weight: bold;
 }
 
-.headerImage{
-    color: white;
-    background-color: grey;
-}
 
 .centerSection{
     flex-direction: column;
     background-color: white;
-    height: 400px;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 450px;
+    margin: auto 100px auto 100px;
 }
 
 .centerTitle{
+    display: flex;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     color: #1F2937;
     font-size: 36px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 
-.boxedImages,
+.boxedContainer,
 .imageDescriptions{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
     margin-bottom: 10px;
-    gap: 50px;
+    gap: 20px;
+    flex: auto;
+    text-align: center;
+    max-height: 400px;
 }
-
-.boxedImages{
+.imgDescription{
     display: flex;
-    padding: 50px 0px;
-    outline: solid black;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex: auto;
+    min-width: 10px;
 }
 
-.image1,
-.image2,
-.image3,
-.image4{
-    outline:solid black;
+.boxImg{
+    display: flex;
+    flex-direction: column;
+    outline: solid #3882F6;
+    border-radius: 10px;
+    min-width: 10px;
+    height: 80px;
+    padding: 30px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    flex: auto;
+
 }
+
 
 .quoteSection{
     height: 400px;
