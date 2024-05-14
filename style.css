@@ -5,6 +5,9 @@ body{
     flex-direction: column;
 }
 
+/* Possible improvement:
+    Have better consistency with spacing and layout of elements*/
+
 .header{
     height: 80px;
     display: flex;
@@ -38,6 +41,8 @@ a{
     font-size: 18px;
 }
 
+/* Possible improvement:
+    Look for more opportunities to consolidate styles */
 .topSection,
 .centerSection,
 .bottomSection,
